@@ -1,4 +1,9 @@
 # depslib dependency file v1.0
-1392747764 source:/home/mac21/Desktop/programaing/examen1/main.cpp
+1392752373 source:/home/mac21/Desktop/programaing/examen1/main.cpp
 	<iostream>
+
+1392747843 source:/home/mac21/Desktop/programaing/examen1/lista.cpp
+	"lista.h"
+
+1392747843 /home/mac21/Desktop/programaing/examen1/lista.h
 

@@ -25,7 +25,7 @@ class Animal
     }
 };
 
-class Gato : Animal
+class Gato : public Animal
 {
     public:
         void hablar()
@@ -43,6 +43,7 @@ class Gato : Animal
         {
             nombre="Gato";
         }
+
 
         string getNombre()
         {
@@ -62,7 +63,7 @@ class Gato : Animal
 };
 
 
-class Perro : Animal
+class Perro : public Animal
 {
     public:
         void hablar()
@@ -97,7 +98,7 @@ class Perro : Animal
         }
 };
 
-class Loro : Animal
+class Loro : public Animal
 {
     public:
         void hablar()
@@ -122,14 +123,13 @@ class Loro : Animal
 
         void imprimir()
         {
-            string name=getNombre();
             if(esFelino())
             {
                 cout<<"si es felino"<<endl;
             }else{
                 cout<<"no es felino"<<endl;
             }
-            cout<<name<<endl;
+
         }
 };
 
@@ -141,15 +141,19 @@ int main()
     Loro miloro;
 
     migato.hablar();
+    migato.setNombre();
+    cout << migato.getNombre() << endl;
     migato.imprimir();
+
     miperro.hablar();
+    miperro.setNombre();
+    cout << miperro.getNombre() << endl;
     miperro.imprimir();
+
     miloro.hablar();
+    miloro.setNombre();
+    cout << miloro.getNombre() << endl;
     miloro.imprimir();
-
-
-
-
 
     return 0;
 }
